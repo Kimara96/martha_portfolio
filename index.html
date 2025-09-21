@@ -1,0 +1,138 @@
+<!DOCTYPE<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martha Kissi | Web Developer Portfolio</title>
+    <meta name="description" content="A professional portfolio showcasing the web development skills and projects of Martha Kissi.">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Martha Kissi</a>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact" class="btn">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <p class="greeting">Hi, I'm</p>
+            <h1 class="name">Martha Kissi</h1>
+            <h2 class="role">Web Developer</h2>
+            <div class="social-links">
+                <a href="mailto:marthakissi96@gmail.com" aria-label="Email Martha" class="social-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://github.com/Kimara96" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" class="social-icon">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/martha-kissi-340937213/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="social-icon">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+        <div class="hero-image-container">
+            <img src="me.jpg1.jpg" alt="A professional photo of Martha Kissi" class="hero-image">
+        </div>
+    </section>
+
+    <section id="about" class="about-section reveal">
+        <h2 class="section-title">About Me</h2>
+        <p class="about-text">
+            I'm a passionate web developer dedicated to creating clean, user-friendly, and responsive web experiences. 
+            I love the process of turning innovative ideas into functional, beautiful websites and am constantly expanding my skillset to stay at the forefront of technology.
+            My journey into tech began with a curiosity for how things work, and it has evolved into a career I love, where I get to solve problems and build things that people can use.
+        </p>
+    </section>
+
+    <section id="skills" class="skills-section reveal">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">HTML5</div>
+            <div class="skill-card">Python</div>
+            <div class="skill-card">Git & GitHub</div>
+            <div class="skill-card">Database Management</div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section reveal">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+            
+            <article class="project-card">
+                <img src="advertisement-api.jpg" alt="Screenshot of an advertisement API dashboard" class="project-image">
+                <div class="project-info">
+                    <h3 class="project-title">Advertisement API</h3>
+                    <p class="project-description">Developed a robust RESTful API designed to manage and deliver advertisements efficiently. This backend solution features endpoints for creating, retrieving, updating, and deleting ad campaigns, with capabilities for targeting, scheduling, and analytics integration. Built with Python and Flask, ensuring high performance and scalability for diverse advertising needs.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/FREEWORLD-HUB/advertisement_api" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <i class="fa-brands fa-github"></i> View Code
+                        </a>
+                        </div>
+                </div>
+            </article>
+            
+            <article class="project-card">
+                <img src="ecommerce-api.jpg" alt="Screenshot of an e-commerce API product listing" class="project-image">
+                <div class="project-info">
+                    <h3 class="project-title">E-commerce API</h3>
+                    <p class="project-description">Created a comprehensive backend API to support a full-featured e-commerce platform. This API handles product management (listings, inventory), user authentication, shopping carts, order processing, and payment gateway integration. Designed with a microservices approach using Node.js and Express, providing a flexible and scalable foundation for online retail applications.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Kimara96/E-commerce_api" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <i class="fa-brands fa-github"></i> View Code
+                        </a>
+                        </div>
+                </div>
+            </article>
+            
+            <article class="project-card">
+                <img src="event-planner-api.jpg" alt="Screenshot of an event planner API with calendar and event details" class="project-image">
+                <div class="project-info">
+                    <h3 class="project-title">Event Planner API</h3>
+                    <p class="project-description">Developed an intuitive API for managing events, bookings, and attendees. This project provides functionalities for creating events, setting dates and venues, handling registrations, and sending notifications. Implemented using Django REST Framework, it offers robust data handling and secure authentication suitable for various event management applications, from small gatherings to large conferences.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Kimara96/event_manager_api" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <i class="fa-brands fa-github"></i> View Code
+                        </a>
+                        </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section reveal">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="contact-intro">I'm currently open to new opportunities. Let's connect and build something great together!</p>
+        <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> Martha Kissi. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/Kimara96" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/martha-kissi-340937213/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
